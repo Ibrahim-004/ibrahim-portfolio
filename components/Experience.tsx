@@ -54,7 +54,7 @@ export default function Experience() {
                     <span className="text-sm text-muted">{job.period}</span>
                   </div>
                   <p className="mt-2 font-semibold text-electric">{job.company}</p>
-                  {job.featured && <p className="mt-3 inline-block rounded-full bg-violet/20 px-3 py-1 text-xs font-semibold text-white">Featured role</p>}
+                  {job.featured && <p className="mt-3 inline-block rounded-full bg-violet/20 px-3 py-1 text-xs font-semibold text-mist">Featured role</p>}
                   <ul className="mt-5 space-y-2 text-muted">
                     {job.highlights.map((h) => <li key={h} className="leading-7">{h}</li>)}
                   </ul>

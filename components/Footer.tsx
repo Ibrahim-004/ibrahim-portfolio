@@ -10,9 +10,9 @@ export default function Footer() {
           <p className="mt-1 text-sm text-muted">{site.role}</p>
         </div>
         <nav className="flex gap-6 text-sm" aria-label="Legal">
-          <Link href="/privacy" className="text-muted hover:text-white">Privacy</Link>
-          <Link href="/terms" className="text-muted hover:text-white">Terms</Link>
-          <a href="#contact" className="text-muted hover:text-white">Contact</a>
+          <Link href="/privacy" className="text-muted hover:text-mist">Privacy</Link>
+          <Link href="/terms" className="text-muted hover:text-mist">Terms</Link>
+          <a href="#contact" className="text-muted hover:text-mist">Contact</a>
         </nav>
         <p className="text-sm text-muted">© 2026 Ibrahim Khalil Ullah. All rights reserved.</p>
       </div>

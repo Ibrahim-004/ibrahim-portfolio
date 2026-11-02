@@ -4,13 +4,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#07080B",
-        panel: "#0D0F16",
-        line: "#1E2433",
-        mist: "#EDEFF5",
-        muted: "#A7AEC0",
-        electric: "#3B82F6",
-        violet: "#8B5CF6"
+        ink: "var(--color-ink)",
+        panel: "var(--color-panel)",
+        line: "var(--color-line)",
+        mist: "var(--color-mist)",
+        muted: "var(--color-muted)",
+        electric: "var(--color-electric)",
+        violet: "var(--color-violet)"
       },
       fontFamily: {
         display: ["var(--font-display)", "Inter", "system-ui", "sans-serif"],

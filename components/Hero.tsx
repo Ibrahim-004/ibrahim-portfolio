@@ -85,7 +85,7 @@ export default function Hero({ started }: { started: boolean }) {
         <p className="hero-fade mt-4 max-w-xl text-base leading-8 text-muted md:text-lg">{site.heroIntro}</p>
         <div className="hero-fade mt-10 flex flex-wrap gap-4">
           <a href="#projects" onMouseMove={magnetic} onMouseLeave={magneticOut} className="magnetic-btn rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-black focus-visible:outline-violet">View selected work</a>
-          <a href="#contact" onMouseMove={magnetic} onMouseLeave={magneticOut} className="magnetic-btn glass rounded-full px-7 py-3.5 text-sm font-semibold text-white hover:border-violet/60">Start a project</a>
+          <a href="#contact" onMouseMove={magnetic} onMouseLeave={magneticOut} className="magnetic-btn glass rounded-full px-7 py-3.5 text-sm font-semibold text-mist hover:border-violet/60">Start a project</a>
         </div>
         <div className="hero-fade mt-16 flex flex-wrap gap-8 text-sm text-muted">
           <span>Chattogram, Bangladesh</span>

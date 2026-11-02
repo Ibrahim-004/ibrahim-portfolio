@@ -85,7 +85,7 @@ export default function Assembly() {
           </div>
           <div className="mt-8 flex items-center gap-4">
             <span className="text-sm text-muted">Live rank</span>
-            <span ref={rankRef} className="glow-border rounded-full bg-gradient-to-r from-electric to-violet px-4 py-1.5 font-display text-lg font-bold">#10</span>
+            <span ref={rankRef} className="glow-border rounded-full bg-gradient-to-r from-electric to-violet px-4 py-1.5 font-display text-lg font-bold text-white">#10</span>
           </div>
         </div>
 

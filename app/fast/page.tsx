@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import AssemblyFast from "@/components/AssemblyFast";
+import SoundTheme from "@/components/SoundTheme";
 import { site } from "@/content/data";
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
 export default function FastPage() {
   return (
     <main id="main">
+      <SoundTheme />
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
         <a href="/" className="font-display text-lg font-bold tracking-tight">
           IK<span className="text-gradient">U</span>
@@ -48,7 +50,7 @@ export default function FastPage() {
           <a href="/#contact" className="rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-black">
             Start a project
           </a>
-          <a href="/" className="rounded-full border border-line px-7 py-3.5 text-sm font-semibold text-white">
+          <a href="/" className="rounded-full border border-line px-7 py-3.5 text-sm font-semibold text-mist">
             Back to the full site
           </a>
         </div>

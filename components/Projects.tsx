@@ -18,7 +18,7 @@ function TiltCard({ project, onOpen }: { project: Project; onOpen: (p: Project) 
   return (
     <article onMouseMove={onMove} onMouseLeave={onLeave} className="glass group relative overflow-hidden rounded-3xl p-6 transition-transform duration-200 md:p-8 hover:border-violet/50" style={{ willChange: "transform" }}>
       <div className="spotlight pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" aria-hidden="true" />
-      <div className="animated-gradient relative mb-6 h-44 overflow-hidden rounded-2xl">
+      <div className="preview-gradient relative mb-6 h-44 overflow-hidden rounded-2xl">
         <span className="absolute inset-0 flex items-center justify-center font-display text-7xl font-bold text-white/90 transition-transform duration-500 group-hover:scale-125 group-hover:rotate-3" aria-hidden="true">{project.title.charAt(0)}</span>
         <span className="absolute bottom-3 left-3 rounded-full bg-black/55 px-3 py-1 text-xs text-white">{project.kind}</span>
         <div className="absolute inset-0 bg-gradient-to-t from-black/45 to-transparent" aria-hidden="true" />

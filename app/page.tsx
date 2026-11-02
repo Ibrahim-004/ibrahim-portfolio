@@ -9,6 +9,7 @@ import Dust from "@/components/Dust";
 import Marquee from "@/components/Marquee";
 import Cursor from "@/components/Cursor";
 import BackToTop from "@/components/BackToTop";
+import SoundTheme from "@/components/SoundTheme";
 import Hero from "@/components/Hero";
 import Assembly from "@/components/Assembly";
 import About from "@/components/About";
@@ -62,6 +63,7 @@ export default function Home() {
       <Dust />
       <Cursor />
       <BackToTop />
+      <SoundTheme />
       <header className="fixed inset-x-0 top-0 z-[100]">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-5 md:px-12" aria-label="Main">
           <a href="#" className="font-display text-lg font-bold tracking-tight">IK<span className="text-gradient">U</span></a>

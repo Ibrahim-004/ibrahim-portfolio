@@ -4,6 +4,38 @@
 
 :root {
   color-scheme: dark;
+  --color-ink: #07080b;
+  --color-panel: #0d0f16;
+  --color-line: #1e2433;
+  --color-mist: #edeff5;
+  --color-muted: #a7aec0;
+  --color-electric: #3b82f6;
+  --color-violet: #8b5cf6;
+  --glass-bg: rgba(13, 15, 22, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.08);
+}
+html[data-theme="day"] {
+  color-scheme: light;
+  --color-ink: #f7f8fb;
+  --color-panel: #ffffff;
+  --color-line: #e2e6ef;
+  --color-mist: #111827;
+  --color-muted: #5b6475;
+  --color-electric: #2563eb;
+  --color-violet: #7c3aed;
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-border: rgba(17, 24, 39, 0.08);
+}
+html[data-theme="day"] .grain::after {
+  opacity: 0.04;
+}
+html[data-theme="day"] .cinema-vignette {
+  background: radial-gradient(ellipse at center, transparent 62%, rgba(17, 24, 39, 0.12) 100%);
+}
+html[data-theme="day"] a.bg-white,
+html[data-theme="day"] button.bg-white {
+  border: 1px solid #e2e6ef;
+  box-shadow: 0 2px 10px rgba(17, 24, 39, 0.08);
 }
 html {
   scroll-behavior: auto;
@@ -15,8 +47,8 @@ html.lenis, html.lenis body {
   scroll-behavior: auto !important;
 }
 body {
-  background: #07080b;
-  color: #edeff5;
+  background: var(--color-ink);
+  color: var(--color-mist);
   font-family: var(--font-body), Inter, system-ui, sans-serif;
   overflow-x: hidden;
 }
@@ -122,6 +154,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   background-size: 300% 300%;
   animation: gradientShift 14s ease infinite;
 }
+html[data-theme="day"] .animated-gradient {
+  background: linear-gradient(115deg, #f7f8fb, #dbeafe, #ede9fe, #f7f8fb);
+}
+.preview-gradient {
+  background: linear-gradient(115deg, #07080b, #12234d, #2a1a5e, #07080b);
+  background-size: 300% 300%;
+  animation: gradientShift 14s ease infinite;
+}
 @keyframes borderGlow {
   0%, 100% { box-shadow: 0 0 0 rgba(59, 130, 246, 0); }
   50% { box-shadow: 0 0 42px rgba(139, 92, 246, 0.35); }
@@ -144,15 +184,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   animation: tickerPulse 2.2s ease-in-out infinite;
 }
 .text-gradient {
-  background: linear-gradient(100deg, #60a5fa 0%, #3b82f6 45%, #8b5cf6 100%);
+  background: linear-gradient(100deg, var(--color-electric) 0%, var(--color-electric) 45%, var(--color-violet) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 .glass {
-  background: rgba(13, 15, 22, 0.72);
+  background: var(--glass-bg);
   backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--glass-border);
 }
 .no-scrollbar::-webkit-scrollbar {
   display: none;
