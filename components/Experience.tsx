@@ -38,7 +38,7 @@ export default function Experience() {
             <div key={m.label} className="metric-card glass rounded-3xl p-6">
               <p className="font-display text-4xl font-bold text-gradient">{m.value}</p>
               <p className="mt-2 font-semibold">{m.label}</p>
-              <p className="mt-1 text-sm text-muted">{m.note}</p>
+              {m.note ? <p className="mt-1 text-sm text-muted">{m.note}</p> : null}
             </div>
           ))}
         </div>

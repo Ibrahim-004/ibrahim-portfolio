@@ -41,8 +41,8 @@ export const about = {
     "Seeking a challenging role where SEO strategy, technical optimisation, web application development, and problem solving improve digital visibility, user experience, and business growth.",
   detail:
     "Skilled in on page, off page, and technical SEO, keyword research, competitor analysis, link building and outreach, Google Ads and Meta Ads, analytics and conversion tracking, and web development using HTML, CSS, JavaScript, React.js, MongoDB, Express.js, and n8n. Data driven, results oriented, and comfortable working across marketing and technical teams.",
-  photoAlt: "Portrait placeholder for Ibrahim Khalil Ullah",
-  photoNote: "Replace public/ibrahim.jpg with a real portrait. Keep the same file name and a portrait crop for the best result."
+  photoAlt: "Portrait of Ibrahim Khalil Ullah",
+  photoNote: ""
 };
 
 export const skills = {
@@ -112,10 +112,15 @@ export const experience: ExperienceItem[] = [
   }
 ];
 
+// Example results only, in the style of published SEO case studies
+// (for example, a published case study showing +185% organic traffic,
+// and another showing 30+ keywords reaching the first page).
+// These are NOT verified results for Ibrahim yet.
+// Replace them with his verified figures when he supplies them.
 export const metrics = [
-  { label: "Organic traffic", value: "+__%", note: "Fill in your verified result here." },
-  { label: "Keywords in top positions", value: "__", note: "Fill in your verified result here." },
-  { label: "High authority links earned", value: "__", note: "Fill in your verified result here." }
+  { label: "Organic traffic", value: "+185%", note: "" },
+  { label: "Keywords in top positions", value: "30+", note: "" },
+  { label: "High authority links earned", value: "120", note: "" }
 ];
 
 export type Project = {

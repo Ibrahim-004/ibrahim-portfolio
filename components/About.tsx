@@ -53,7 +53,6 @@ export default function About() {
             <p className="mt-2 text-sm leading-6 text-muted">Higher Secondary Certificate (Science), Comilla Government College, 2013, GPA 4.50</p>
             <p className="mt-2 text-sm leading-6 text-muted">Secondary School Certificate (Science), 2011, GPA 5.00</p>
           </div>
-          <p className="about-line mt-6 rounded-xl border border-line bg-panel p-4 text-sm leading-6 text-muted">{about.photoNote}</p>
         </div>
       </div>
     </section>

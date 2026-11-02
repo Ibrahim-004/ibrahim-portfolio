@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { projects, type Project } from "@/content/data";
 
@@ -42,7 +42,16 @@ function TiltCard({ project, onOpen }: { project: Project; onOpen: (p: Project) 
 
 export default function Projects({ onRequestAccess }: { onRequestAccess: (project: Project) => void }) {
   const [open, setOpen] = useState<Project | null>(null);
+  // Lock background scroll while a case study is open, so the modal
+  // stays in the main window instead of drifting with the page scroll.
+  useEffect(() => {
+    if (!open) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = previous; };
+  }, [open]);
   return (
+    <>
     <section id="projects" className="max-reveal bg-panel px-6 py-24 md:px-12 md:py-32" aria-label="Projects">
       <div className="mx-auto max-w-6xl">
         <p className="text-xs tracking-[0.35em] text-muted">PROJECTS</p>
@@ -52,6 +61,12 @@ export default function Projects({ onRequestAccess }: { onRequestAccess: (projec
           {projects.map((p) => <TiltCard key={`${p.title}-${p.kind}`} project={p} onOpen={setOpen} />)}
         </div>
       </div>
+    </section>
+      {/* Case study modal is intentionally OUTSIDE the section above.
+          The section is animated with a transform, and a fixed element
+          inside a transformed ancestor is positioned against that
+          ancestor, not the viewport, which is why the modal used to
+          appear off screen and only show after scrolling. */}
       <AnimatePresence>
         {open && (
           <motion.div className="fixed inset-0 z-[180] flex items-end justify-center bg-black/80 p-4 backdrop-blur-sm md:items-center" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => setOpen(null)} role="dialog" aria-modal="true" aria-label={`Case study for ${open.title}`}>
@@ -80,6 +95,6 @@ export default function Projects({ onRequestAccess }: { onRequestAccess: (projec
           </motion.div>
         )}
       </AnimatePresence>
-    </section>
+    </>
   );
 }
