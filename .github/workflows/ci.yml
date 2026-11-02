@@ -1,0 +1,40 @@
+name: CI
+
+# CI runs first on every push to main and on every pull request.
+# It is a check only: it does not deploy. Vercel still deploys on push,
+# but a failing CI run is visible on the commit before anyone relies on it.
+# No npm audit gate here on purpose: an audit failure in an unrelated
+# dependency must not block a typecheck and build check.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    name: Typecheck and build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Typecheck
+        run: npx tsc --noEmit
+      - name: Build
+        run: npm run build
+        env:
+          NEXT_PUBLIC_SITE_URL: https://ibrahim-portfolio-pro-7c0c.vercel.app
