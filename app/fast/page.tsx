@@ -3,7 +3,7 @@ import AssemblyFast from "@/components/AssemblyFast";
 import { site } from "@/content/data";
 
 export const metadata: Metadata = {
-  title: "From invisible to inevitable | Fast version",
+  title: "Find the demand. Build the proof. Grow the result. | Fast version",
   description: "A fast, lightweight version of the Assembly story: CSS motion only, no pin, no canvas, no WebGL.",
   robots: { index: false, follow: false },
   alternates: { canonical: "/" },

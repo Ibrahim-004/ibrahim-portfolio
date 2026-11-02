@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     type: "website",
     url: site.siteUrl,
     title: "Ibrahim Khalil Ullah | SEO Strategist and Full Stack Developer",
-    description: "From invisible to inevitable. A portfolio built to rank and to ship.",
+    description: "Find the demand. Build the proof. Grow the result. A portfolio built to rank and to ship.",
     siteName: site.name,
     images: [{ url: "/ibrahim.jpg", width: 1080, height: 1350, alt: "Portrait of Ibrahim Khalil Ullah" }]
   },
   twitter: {
     card: "summary_large_image",
     title: "Ibrahim Khalil Ullah | SEO Strategist and Full Stack Developer",
-    description: "From invisible to inevitable.",
+    description: "Find the demand. Build the proof. Grow the result.",
     images: ["/ibrahim.jpg"]
   }
 };

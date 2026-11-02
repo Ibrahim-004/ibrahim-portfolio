@@ -38,7 +38,7 @@ export default function AssemblyFast() {
       ref={root}
       id="assembly-fast"
       className="relative bg-panel px-6 py-20 md:py-24"
-      aria-label="From invisible to inevitable, fast version"
+      aria-label="Find the demand. Build the proof. Grow the result., fast version"
     >
       <div className="mx-auto grid w-full max-w-6xl gap-10 md:grid-cols-2 md:items-start">
         <div>

@@ -15,14 +15,14 @@ export const site = {
 
 export const assembly = {
   eyebrow: "The Assembly",
-  title: "From invisible to inevitable.",
+  title: "Find the demand. Build the proof. Grow the result.",
   caption:
-    "Scroll through the climb. Every step earns the next one, until your brand is the obvious answer.",
+    "Scroll and watch search turn into revenue. We start with what people already want, build the pages and product to serve it, then prove it with rankings, links, and conversions.",
   steps: [
-    { stage: "Strategy", rank: "#10 to #7", text: "Find the demand others miss, and map it to pages built to answer it." },
-    { stage: "Structure", rank: "#7 to #4", text: "Build a fast, clear structure that search engines and people can trust." },
-    { stage: "Code", rank: "#4 to #2", text: "Ship the product layer by layer, so it works, loads fast, and earns confidence." },
-    { stage: "Growth", rank: "#2 to #1", text: "Visibility turns into authority, and authority turns into sales." }
+    { stage: "Strategy", rank: "#10 to #7", text: "Map real search intent to pages that answer it clearly." },
+    { stage: "Structure", rank: "#7 to #4", text: "Build fast pages and clean code, with content that has one clear job." },
+    { stage: "Code", rank: "#4 to #2", text: "Ship the product layer by layer, ready to use and ready to trust." },
+    { stage: "Growth", rank: "#2 to #1", text: "Traffic, backlinks, and conversions arrive together, and the result compounds." }
   ],
   layers: ["HTML", "CSS", "React", "API", "Database"],
   toppings: [
