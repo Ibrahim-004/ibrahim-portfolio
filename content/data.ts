@@ -6,7 +6,7 @@ export const site = {
   phoneDisplay: "+880 1728 057536",
   phoneHref: "tel:+8801728057536",
   email: "ibrahimkhalilullah534@gmail.com",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://ibrahimkhalilullah.vercel.app",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://ibrahim-portfolio-pro-7c0c.vercel.app",
   heroTitle: ["IBRAHIM", "KHALIL", "ULLAH"],
   heroSubtitle: "SEO Strategist × Full Stack Developer",
   heroIntro:

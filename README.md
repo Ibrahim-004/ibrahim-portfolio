@@ -1,5 +1,9 @@
 1. Ibrahim Khalil Ullah Portfolio
 
+Live site: https://ibrahim-portfolio-pro-7c0c.vercel.app
+GitHub: https://github.com/Ibrahim-004/ibrahim-portfolio
+Vercel project: ibrahim-portfolio, project id prj_AFGTVNAdVYwDZgE5uYIuARilsyHA, team pro-7c0c
+
 A cinematic, scroll driven portfolio for an SEO strategist and full stack developer. Scroll is the camera. The hero reveals letter by letter, the Assembly scene pins while a ranking climbs from position 10 to position 1, code layers build in order, and growth metrics land on top.
 
 Motion upgrade, maximum effort: a heavier film layer is now always on. It adds stronger film grain, a vignette, a moving light leak, floating dust across the whole page, a cursor trail on desktop, a gradient scroll progress bar, a black film cut wipe on every section change, infinite marquee strips, a rotating badge in the hero, an animated gradient hero background, 1200 ambient particles, camera zoom and blur in the hero and Assembly, a longer pinned Assembly with a second camera push and flash, magnetic buttons, a spotlight that follows the mouse on project cards, 3D skill chips, glowing metric cards, camera reveals on every main section, and pulsing glow in the closing contact scene. Reduced motion still returns the site to clean static layouts, and mobile gets a lighter dust count.
